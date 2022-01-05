@@ -1,0 +1,31 @@
+<p>loping works!</p>
+
+<table class="table">
+  <tr>
+    <th>Nama</th>
+    <th>Umur</th>
+    <th>Index</th>
+    <th>First</th>
+    <th>Last</th>
+    <th>Odd</th>
+    <th>Even</th>
+  </tr>
+  <tr
+    *ngFor="
+      let user of users;
+      index as i;
+      first as f;
+      last as l;
+      odd as o;
+      even as e
+    "
+  >
+    <td>{{ user.nama }}</td>
+    <td>{{ user.umur }}</td>
+    <td>{{ i }}</td>
+    <td>{{ f }}</td>
+    <td>{{ l }}</td>
+    <td>{{ e }}</td>
+    <td>{{ o }}</td>
+  </tr>
+</table>
